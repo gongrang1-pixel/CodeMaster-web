@@ -1,0 +1,422 @@
+[
+  {
+    "id": 101,
+    "difficulty": 1,
+    "category": "변수",
+    "text": "정수형 변수 score를 선언하면서 10으로 초기화하는 코드는?",
+    "choices": [
+      "int score = 10;",
+      "int = score 10;",
+      "score int = 10;",
+      "int score == 10;"
+    ],
+    "correctAnswer": 1,
+    "explanation": "자료형, 변수 이름, 초기값 순서로 int score = 10;처럼 작성합니다."
+  },
+  {
+    "id": 102,
+    "difficulty": 1,
+    "category": "자료형",
+    "text": "참(true) 또는 거짓(false)을 표현하는 C++ 기본 자료형은?",
+    "choices": [
+      "char",
+      "bool",
+      "double",
+      "void"
+    ],
+    "correctAnswer": 2,
+    "explanation": "bool은 논리값 true와 false를 표현하는 자료형입니다."
+  },
+  {
+    "id": 103,
+    "difficulty": 1,
+    "category": "연산자",
+    "text": "int a = 7; int b = 2;일 때 a / b의 값은?",
+    "choices": [
+      "3.5",
+      "4",
+      "3",
+      "2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "두 피연산자가 정수이면 정수 나눗셈을 수행합니다. 7 / 2는 3입니다."
+  },
+  {
+    "id": 104,
+    "difficulty": 1,
+    "category": "연산자",
+    "text": "정수 식 17 % 5의 값은?",
+    "choices": [
+      "3",
+      "5",
+      "1",
+      "2"
+    ],
+    "correctAnswer": 4,
+    "explanation": "%는 정수 나눗셈의 나머지 연산자입니다. 17 = 5 * 3 + 2이므로 나머지는 2입니다."
+  },
+  {
+    "id": 105,
+    "difficulty": 1,
+    "category": "조건문",
+    "text": "다음 코드의 출력은?\nint x = 5;\nif (x >= 5) std::cout << \"A\";\nelse std::cout << \"B\";",
+    "choices": [
+      "A",
+      "B",
+      "AB",
+      "출력 없음"
+    ],
+    "correctAnswer": 1,
+    "explanation": "x는 5이므로 x >= 5가 참입니다. if의 본문만 실행되어 A를 출력합니다."
+  },
+  {
+    "id": 106,
+    "difficulty": 1,
+    "category": "연산자",
+    "text": "정수형 변수 x의 값에 관계없이, x가 0보다 크고 5보다 작을 때에만 참이 되는 식은?",
+    "choices": [
+      "x > 0 || x > 5",
+      "x > 0 && x < 5",
+      "x < 0 && x < 5",
+      "x == 0 || x == 5"
+    ],
+    "correctAnswer": 2,
+    "explanation": "논리 AND 연산자 &&는 양쪽 조건이 모두 참일 때 참입니다. x > 0 || x > 5는 x가 5 이상이어도 참이므로 올바른 범위 검사가 아닙니다."
+  },
+  {
+    "id": 107,
+    "difficulty": 1,
+    "category": "반복문",
+    "text": "다음 코드 실행 후 sum의 값은?\nint sum = 0;\nfor (int i = 1; i <= 3; ++i) { sum += i; }",
+    "choices": [
+      "3",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswer": 3,
+    "explanation": "i가 1, 2, 3일 때 본문을 실행하므로 sum은 1 + 2 + 3 = 6입니다."
+  },
+  {
+    "id": 108,
+    "difficulty": 1,
+    "category": "반복문",
+    "text": "다음 while문의 본문은 몇 번 실행되는가?\nint n = 0;\nwhile (n < 3) { ++n; }",
+    "choices": [
+      "0번",
+      "1번",
+      "2번",
+      "3번"
+    ],
+    "correctAnswer": 4,
+    "explanation": "n이 0, 1, 2일 때 조건이 참입니다. n이 3이 되면 종료하여 총 3번 실행합니다."
+  },
+  {
+    "id": 109,
+    "difficulty": 1,
+    "category": "변수",
+    "text": "초기화한 뒤 값을 다시 대입할 수 없는 정수형 변수의 선언은?",
+    "choices": [
+      "const int limit = 10;",
+      "int limit = 10;",
+      "double limit = 10;",
+      "bool limit = true;"
+    ],
+    "correctAnswer": 1,
+    "explanation": "const로 선언한 변수는 초기화한 뒤 대입으로 값을 변경할 수 없습니다."
+  },
+  {
+    "id": 110,
+    "difficulty": 1,
+    "category": "반복문",
+    "text": "반복문 본문에서 break;가 실행되면 어떻게 되는가? (내부 switch문은 없음)",
+    "choices": [
+      "현재 프로그램 전체가 종료된다.",
+      "가장 안쪽의 해당 반복문을 즉시 종료한다.",
+      "다음 반복으로 바로 넘어간다.",
+      "반복 횟수를 두 배로 늘린다."
+    ],
+    "correctAnswer": 2,
+    "explanation": "break는 해당 반복문을 빠져나갑니다. 다음 반복으로 넘어가는 문장은 continue입니다."
+  },
+  {
+    "id": 201,
+    "difficulty": 2,
+    "category": "배열",
+    "text": "int arr[3] = {10, 20, 30};일 때 arr[1]의 값은?",
+    "choices": [
+      "10",
+      "20",
+      "30",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "배열 인덱스는 0부터 시작하므로 arr[1]은 두 번째 원소인 20입니다."
+  },
+  {
+    "id": 202,
+    "difficulty": 2,
+    "category": "배열",
+    "text": "int arr[5] = {};에서 배열 원소에 접근할 수 있는 유효 인덱스 범위는?",
+    "choices": [
+      "1~5",
+      "0~5",
+      "0~4",
+      "1~4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "길이가 5인 배열의 인덱스는 0부터 4까지입니다. arr[5]는 원소 접근 범위를 벗어납니다."
+  },
+  {
+    "id": 203,
+    "difficulty": 2,
+    "category": "함수",
+    "text": "int add(int a, int b) { return a + b; }일 때 add(2, 3)의 반환값은?",
+    "choices": [
+      "2",
+      "3",
+      "6",
+      "5"
+    ],
+    "correctAnswer": 4,
+    "explanation": "매개변수 a와 b에 각각 2와 3이 전달되고 두 값의 합인 5를 반환합니다."
+  },
+  {
+    "id": 204,
+    "difficulty": 2,
+    "category": "함수",
+    "text": "다음 코드 실행 후 x의 값은?\nvoid change(int n) { n = 9; }\n// main 내부\nint x = 1;\nchange(x);",
+    "choices": [
+      "1",
+      "9",
+      "0",
+      "컴파일 오류"
+    ],
+    "correctAnswer": 1,
+    "explanation": "값 전달에서는 x의 복사본인 n만 변경됩니다. 원래 변수 x는 1을 유지합니다."
+  },
+  {
+    "id": 205,
+    "difficulty": 2,
+    "category": "참조자",
+    "text": "다음 코드 실행 후 x의 값은?\nint x = 5;\nint& ref = x;\nref = 8;",
+    "choices": [
+      "5",
+      "8",
+      "0",
+      "컴파일 오류"
+    ],
+    "correctAnswer": 2,
+    "explanation": "참조자 ref는 x의 다른 이름입니다. ref에 8을 대입하면 x도 8이 됩니다."
+  },
+  {
+    "id": 206,
+    "difficulty": 2,
+    "category": "참조자",
+    "text": "다음 코드 실행 후 x의 값은?\nvoid increment(int& n) { ++n; }\n// main 내부\nint x = 4;\nincrement(x);",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "컴파일 오류"
+    ],
+    "correctAnswer": 3,
+    "explanation": "참조 매개변수 n은 전달한 x를 직접 가리키므로 ++n으로 x가 5가 됩니다."
+  },
+  {
+    "id": 207,
+    "difficulty": 2,
+    "category": "포인터",
+    "text": "int x = 7;일 때 x의 주소로 정수 포인터 p를 초기화하는 코드는?",
+    "choices": [
+      "int* p = x;",
+      "int p = &x;",
+      "int* p = *x;",
+      "int* p = &x;"
+    ],
+    "correctAnswer": 4,
+    "explanation": "int*는 정수 포인터 자료형이며 &x는 x의 주소를 구하는 식입니다."
+  },
+  {
+    "id": 208,
+    "difficulty": 2,
+    "category": "포인터",
+    "text": "다음 코드 실행 후 x의 값은?\nint x = 7;\nint* p = &x;\n*p = 12;",
+    "choices": [
+      "12",
+      "7",
+      "0",
+      "컴파일 오류"
+    ],
+    "correctAnswer": 1,
+    "explanation": "*p는 p가 가리키는 변수 x에 접근합니다. *p = 12는 x를 12로 변경합니다."
+  },
+  {
+    "id": 209,
+    "difficulty": 2,
+    "category": "문자열",
+    "text": "std::string s = \"C++\";일 때 s.size()의 값은?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "0"
+    ],
+    "correctAnswer": 2,
+    "explanation": "문자열 내용은 C, +, +의 세 문자입니다. size()는 끝의 널 문자를 길이에 포함하지 않습니다."
+  },
+  {
+    "id": 210,
+    "difficulty": 2,
+    "category": "문자열",
+    "text": "std::string a = \"Code\"; std::string b = \"Master\";일 때 a + b의 결과는?",
+    "choices": [
+      "Code Master",
+      "MasterCode",
+      "CodeMaster",
+      "컴파일 오류"
+    ],
+    "correctAnswer": 3,
+    "explanation": "std::string의 + 연산은 두 문자열을 순서대로 연결하며 공백을 자동으로 넣지 않습니다."
+  },
+  {
+    "id": 301,
+    "difficulty": 3,
+    "category": "클래스",
+    "text": "C++에서 class로 선언한 클래스의 멤버는 접근 지정자를 생략하면 어떤 접근 수준인가?",
+    "choices": [
+      "public",
+      "protected",
+      "전역 접근",
+      "private"
+    ],
+    "correctAnswer": 4,
+    "explanation": "class의 기본 멤버 접근 수준은 private입니다. struct의 기본 멤버 접근 수준은 public입니다."
+  },
+  {
+    "id": 302,
+    "difficulty": 3,
+    "category": "객체",
+    "text": "class Player {};가 선언되어 있을 때 Player 타입 객체 p를 정의하는 코드는?",
+    "choices": [
+      "Player p;",
+      "class p = Player;",
+      "Player = p;",
+      "object p(Player);"
+    ],
+    "correctAnswer": 1,
+    "explanation": "클래스 이름을 자료형처럼 사용하여 Player p;로 객체를 정의합니다."
+  },
+  {
+    "id": 303,
+    "difficulty": 3,
+    "category": "생성자",
+    "text": "클래스 이름이 Player일 때 클래스 내부에서 기본 생성자를 선언하는 올바른 코드는?",
+    "choices": [
+      "void Player();",
+      "Player();",
+      "int Player();",
+      "constructor Player();"
+    ],
+    "correctAnswer": 2,
+    "explanation": "생성자는 클래스와 이름이 같으며 반환형을 쓰지 않습니다. Player();는 매개변수가 없는 생성자 선언입니다."
+  },
+  {
+    "id": 304,
+    "difficulty": 3,
+    "category": "생성자",
+    "text": "다음 객체 생성 후 c.value()의 반환값은?\nclass Counter {\n    int count;\npublic:\n    Counter(int n) : count(n) {}\n    int value() const { return count; }\n};\nCounter c(7);",
+    "choices": [
+      "0",
+      "1",
+      "7",
+      "컴파일 오류"
+    ],
+    "correctAnswer": 3,
+    "explanation": "생성자의 멤버 초기화 목록 count(n)이 전달받은 7로 count를 초기화합니다."
+  },
+  {
+    "id": 305,
+    "difficulty": 3,
+    "category": "상속",
+    "text": "Base가 이미 정의된 클래스일 때 Derived가 Base를 public 상속하는 올바른 선언은?",
+    "choices": [
+      "class Derived extends Base {};",
+      "class Derived : private Base {};",
+      "class Base : public Derived {};",
+      "class Derived : public Base {};"
+    ],
+    "correctAnswer": 4,
+    "explanation": "C++는 콜론 뒤에 접근 지정자와 기반 클래스 이름을 써서 상속합니다."
+  },
+  {
+    "id": 306,
+    "difficulty": 3,
+    "category": "캡슐화",
+    "text": "잔액을 음수로 설정하지 못하도록 하는 설계로 가장 적절한 것은?",
+    "choices": [
+      "잔액을 private으로 숨기고 public 메서드에서 입력값을 검사한다.",
+      "잔액을 public으로 공개하고 어디서나 변경하게 한다.",
+      "잔액을 전역 변수로 바꾼다.",
+      "모든 접근 지정자를 public으로 바꾼다."
+    ],
+    "correctAnswer": 1,
+    "explanation": "내부 데이터를 private으로 보호하고 메서드에서 변경 조건을 검사하면 객체의 유효한 상태를 유지할 수 있습니다."
+  },
+  {
+    "id": 307,
+    "difficulty": 3,
+    "category": "다형성",
+    "text": "다음 코드에서 p->value()의 반환값은?\nstruct Base { virtual int value() const { return 1; } };\nstruct Derived : Base { int value() const override { return 2; } };\nDerived d;\nBase* p = &d;",
+    "choices": [
+      "1",
+      "2",
+      "0",
+      "컴파일 오류"
+    ],
+    "correctAnswer": 2,
+    "explanation": "가상 함수 호출은 실제 객체 타입을 따릅니다. p가 Derived 객체를 가리키므로 Derived::value()가 실행됩니다."
+  },
+  {
+    "id": 308,
+    "difficulty": 3,
+    "category": "다형성",
+    "text": "파생 클래스의 멤버 함수 선언에 붙인 override의 역할은?",
+    "choices": [
+      "함수를 자동으로 두 번 호출한다.",
+      "함수를 전역 함수로 바꾼다.",
+      "기반 클래스의 가상 함수를 올바르게 재정의하는지 컴파일러가 검사하게 한다.",
+      "모든 멤버를 public으로 바꾼다."
+    ],
+    "correctAnswer": 3,
+    "explanation": "override는 기반 클래스의 가상 함수를 재정의한다는 의도를 표시합니다. 서명이 맞지 않으면 컴파일 오류가 발생합니다."
+  },
+  {
+    "id": 309,
+    "difficulty": 3,
+    "category": "상속",
+    "text": "기반 클래스의 private 데이터 멤버에 대해 옳은 설명은? (friend 선언 없음)",
+    "choices": [
+      "파생 클래스는 항상 직접 접근할 수 있다.",
+      "어떤 전역 함수든 직접 접근할 수 있다.",
+      "public 상속하면 해당 멤버도 자동으로 public이 된다.",
+      "파생 클래스는 직접 접근할 수 없으며, 기반 클래스가 제공한 접근 가능한 메서드를 이용할 수 있다."
+    ],
+    "correctAnswer": 4,
+    "explanation": "기반 클래스의 private 멤버는 파생 클래스에서도 직접 접근할 수 없습니다. public 또는 접근 가능한 protected 메서드를 통해 간접적으로 이용할 수 있습니다."
+  },
+  {
+    "id": 310,
+    "difficulty": 3,
+    "category": "다형성",
+    "text": "new Derived로 생성한 객체를 Base*에 저장한 뒤 delete할 때, 올바른 소멸을 위한 Base 소멸자 선언은? (public 영역)",
+    "choices": [
+      "virtual ~Base() = default;",
+      "~Base() = default;",
+      "void ~Base();",
+      "static ~Base();"
+    ],
+    "correctAnswer": 1,
+    "explanation": "기반 클래스 포인터로 파생 객체를 삭제하려면 기반 클래스 소멸자가 virtual이어야 합니다. 그래야 파생 클래스 소멸자도 올바르게 호출됩니다."
+  }
+]
